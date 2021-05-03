@@ -1,0 +1,241 @@
+header,main {
+    min-width: 1300px;
+}
+
+/* header start*/
+
+header {
+    width: 100vw;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    padding: 0 17vw;
+    border-bottom: 1px solid #4141412c;
+}
+
+.logo {
+    width: 25%;
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+.top_nav {
+    width: 50%;
+    font-size: 1.4rem;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.top_icon {
+    width: 20%;
+    margin-left: 5%;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    flex-grow: 1;
+    cursor: pointer;
+    position: relative;
+}
+
+.cartCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+    right: 10px;
+    top: -2px;
+}
+
+/* header end */
+/* main start*/
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 17% 0;
+}
+
+main ol {
+    display: flex;
+}
+
+main ol li {
+    font-size:1.2rem;
+    font-family: 'Noto Sans JP';
+    margin-bottom: 30px;
+}
+
+main ol li span {
+    cursor: pointer;
+}
+
+main ol li span:hover {
+    text-decoration: underline;
+}
+
+main ol li:last-child {
+    color: #888888;
+}
+
+main>div {
+    display: flex;
+    width: 100%;
+}
+
+.main_nav {
+    width: 20%;
+    margin-right: 5%;
+}
+
+.main_nav>div {
+    display: flex;
+    margin-bottom:15px;
+}
+
+.main_nav input {
+    width: 170px;
+    height: 40px;
+    border: 1px solid #4141412c;
+    padding-left: 10px;
+}
+
+.main_nav input:focus {
+    border: 1px solid black;
+}
+
+.main_nav img {
+    cursor: pointer;
+    -webkit-user-drag: none;
+}
+
+.main_nav li {
+    font-size:1.6rem;
+    padding: 10px 0 15px;
+    font-weight:bold;
+    letter-spacing:1px;
+    border-bottom: 1px solid #ccc;
+    max-width: 210px;
+    cursor: pointer;
+    position: relative;
+}
+
+.main_nav li:hover {
+    text-decoration:underline;
+}
+
+.main_nav li:first-child::before {
+    position: absolute;
+    content: "";
+    display: block;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    transform:translateY(-100%) rotateZ(135deg);
+    top: 50%;
+    right: 15px;
+    width: 8px;
+    height: 8px; 
+}
+
+
+.container {
+    width: 75%;
+    min-width: 865px;
+}
+
+.container h1 {
+    font-size:2rem;
+    margin-bottom: 15px;
+    font-family: 'Noto Sans JP';
+}
+
+.container h2 {
+    font-size:1.2rem;
+    margin-bottom: 30px;
+    font-family: 'Noto Sans JP';
+    color: #888888;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.item:hover p {
+    text-decoration: underline;
+}
+
+.item div {
+    width: 90%;
+    padding:0 5%;
+    height: 280px;
+    background: #4141412c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Noto Sans JP';
+}
+
+.item .item1 {
+    background-image: url("../img/item1.jpg");
+    background-size: cover;
+}
+
+.item .item2 {
+    background-image: url("../img/item2.jpg");
+    background-size: cover;
+}
+
+.item .item3 {
+    background-image: url("../img/item3.jpg");
+    background-size: cover;
+}
+
+.item .item4 {
+    background-image: url("../img/item4.jpg");
+    background-size: cover;
+}
+
+.item * {
+    margin-bottom: 10px;
+}
+
+.txt1 {
+    font-size:1.4rem;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+    font-weight: 700;
+    color: #888;
+}
+
+.txt2 {
+    font-size:1.4rem;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+    font-weight: bold;
+}
+
+.txt3 {
+    font-size:1.2rem;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+}

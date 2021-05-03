@@ -1,0 +1,219 @@
+header,main {
+    min-width: 1300px;
+}
+
+/* header start*/
+
+header {
+    width: 100vw;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    padding: 0 17vw;
+    border-bottom: 1px solid #4141412c;
+}
+
+.logo {
+    width: 25%;
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+.top_nav {
+    width: 50%;
+    font-size: 1.4rem;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.top_icon {
+    width: 20%;
+    margin-left: 5%;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    flex-grow: 1;
+    cursor: pointer;
+    position: relative;
+}
+
+.cartCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+    right: 10px;
+    top: -2px;
+}
+
+/* header end */
+/* main start*/
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 17% 0;
+}
+
+main ol {
+    display: flex;
+}
+
+main ol li {
+    font-size:1.2rem;
+    font-family: 'Noto Sans JP';
+    margin-bottom: 30px;
+}
+
+main ol li span {
+    cursor: pointer;
+}
+
+main ol li span:hover {
+    text-decoration: underline;
+}
+
+main ol li:last-child {
+    color: #888888;
+}
+
+main>div {
+    display: flex;
+    width: 100%;
+}
+
+.main_nav {
+    width: 20%;
+    margin-right: 5%;
+}
+
+.main_nav>div {
+    display: flex;
+    margin-bottom:15px;
+}
+
+.main_nav input {
+    width: 210px;
+    height: 40px;
+    border: 1px solid #4141412c;
+}
+
+.main_nav li {
+    font-size:1.6rem;
+    padding: 10px 0 15px;
+    font-weight:bold;
+    letter-spacing:1px;
+    border-bottom: 1px solid #ccc;
+    max-width: 210px;
+    cursor: pointer;
+}
+
+
+.container {
+    width: 100%;
+}
+
+.imgBox {
+    float: left;
+    width: 42%;
+    margin: 0 4%;
+    height: 700px;
+    background :url("../img/item4.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4rem;
+    font-family: 'Noto Sans JP';
+}
+
+.txtBox {
+    float: right;
+    width: 50%;
+}
+
+.txt1 {
+    font-size:1.4rem;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+    font-weight: 700;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.txtBox>.txt1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.txt2 {
+    font-size:2rem;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.txt3 {
+    font-size:2.4rem;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+    margin-bottom: 20px;
+}
+
+.txt3 span {
+    font-size:1.4rem;
+}
+
+.txtBox table {
+    width: 100%;
+    border-spacing:2px 10px;
+}
+
+.txtBox th {
+    background :#4141412c;
+    height: 30px;
+    text-align: center;
+    line-height:30px;
+    font-size:1.2rem;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+    font-weight: bold;
+}
+
+.txtBox td {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size:1.2rem;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+    font-weight: bold;
+}
+
+.cart {
+    background:black;
+    color:white;
+    cursor: pointer;
+}
+
+.like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+}
+
+.like img {
+    cursor: pointer;
+}
+
+
+
