@@ -1,0 +1,260 @@
+header,main {
+    min-width: 1300px;
+}
+
+/* header start*/
+
+header {
+    width: 100vw;
+    height: 90px;
+    padding: 0 17vw;
+    border-bottom: 2.5px solid #4141412c;
+}
+
+header ol {
+    display: flex;
+    padding: 15px 0;
+}
+
+header ol li {
+    font-size:1.2rem;
+    font-family: 'Noto Sans JP';
+}
+
+header ol li span {
+    cursor: pointer;
+}
+
+header ol li span:hover {
+    text-decoration: underline;
+}
+
+header ol li:last-child {
+    color: #888888;
+}
+
+header h1 {
+    font-size:2.4rem;
+    font-weight:bold;
+    font-family: 'Noto Sans JP';
+}
+
+/* header end */
+/* main start*/
+
+main {
+    width: 100vw;
+    padding: 0 17vw;
+    margin-top: 20px;
+    display: flex;
+}
+
+.leftBox {
+    width:65%;
+    min-width: 800px;
+    margin-right: 5%;
+}
+
+.leftBox>p {
+    color:red;
+    font-size:1.2rem;
+    font-family: 'Noto Sans JP';
+}
+
+.leftBox h2 {
+    margin: 20px 0 25px;
+    padding-bottom:15px;
+    border-bottom:1px solid #4141412c;
+    font-size:2rem;
+    font-weight: bold;
+    font-family: 'Noto Sans JP';
+}
+
+.itemWapper {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.itemImg {
+    width: 20%;
+    min-width: 150px;
+    height:200px;
+    background-color: #4141412c;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Noto Sans JP';
+    margin-right: 5%;
+}
+
+.itemBox {
+    width: 75%;
+    min-width: 630px;
+    padding:10px 0;
+}
+
+.item_name:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.itemBox table {
+    width: 100%;
+    border-spacing:2px 15px;
+    text-align: center;
+}
+
+.itemBox th {
+    height: 30px;
+    background-color: #4141412c;
+    line-height: 30px;
+}
+
+.itemBox th:nth-child(1){
+    width: 35%;
+}
+
+.itemBox th:nth-child(2){
+    width: 15%;
+}
+
+.itemBox th:nth-child(3){
+    width: 40%;
+}
+
+.itemBox th:nth-child(4){
+    width: 10%;
+}
+
+
+.txt1 {
+    font-size:1.3rem;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+    font-weight: bold;
+    color: #888;
+    margin-bottom: 2px;
+}
+
+.txt2 {
+    font-size:1.2rem;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.txt3 {
+    font-size:1.2rem;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+    color: #888;
+}
+
+.delete {
+    position: relative;
+    cursor: pointer;
+}
+
+.delete::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    height: 1px;
+    width: 60%;
+}
+
+.rightBox {
+    margin-top:40px;
+    width: 30%;
+    min-width: 350px;
+    padding:25px 30px;
+    background:#4141412c;
+    max-height: 300px;
+}
+
+.rightBox table {
+    width:100%;
+    border-collapse: collapse; 
+    font-size:1.2rem;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+}
+
+.rightBox table tr:first-child {
+    border-bottom: 1px solid #000;
+}
+
+.rightBox table tr td:first-child {
+    float: left;
+}
+
+.rightBox table tr td:last-child {
+    float: right;
+}
+
+.txt4 {
+    font-size:1.6rem;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+    font-weight: bold;
+}
+
+.txt4 div {
+    padding-bottom: 10px;
+}
+
+.margin-top {
+    margin-top: 10px;
+}
+
+.margin-bottom {
+    margin-bottom: 10px;
+}
+
+.rightBox table tr:last-child {
+    border-top: 1px solid #4141412c;
+}
+
+.total {
+    margin-top:10px;
+}
+
+.rightBox p {
+    color:red;
+    margin: 10px 0 15px;
+    font-size:1.2rem;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+}
+
+.cart_btn {
+    min-width: 290px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.cart_btn:hover {
+    text-decoration: underline;
+}
+
+.cart_btn::before {
+    position: absolute;
+    content: "";
+    display: block;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    transform:translateY(-50%) rotateZ(45deg);
+    top: 50%;
+    right: 15px;
+    width: 8px;
+    height: 8px; 
+}

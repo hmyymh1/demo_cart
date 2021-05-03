@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="../js/cartall.js"></script>
+    <script src="js/order.js"></script>
+    <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
+</head>
+<body>
+    <header>
+        <ol>
+            <li><span><a href="../../index.html">TOP</a></span>&nbsp;&gt;&nbsp;</li>
+            <li><span><a href="../index.html">ショッピングカート</a></span>&nbsp;&gt;&nbsp;</li>
+            <li>情報入力</li>
+        </ol>
+        <h1>配送先・お支払い情報</h1>
+    </header>
+
+    <main>
+        <div class="step">
+            <ol>
+                <li class="active">情報入力</li>
+                <li>ご注文内容確認</li>
+                <li>ご注文完了</li>
+            </ol>
+        </div>
+        <div class="leftBox">
+            <h2>お届け先の入力</h2>
+            <form action="" class="h-adr">
+                <span class="p-country-name" style="display:none;">Japan</span>
+                <table>
+                    <tr class="adressName">
+                        <th>お届け先名称<span>＊</span></th>
+                        <td>
+                            <input type="text" class="must">
+                        </td>
+                    </tr>
+                    <tr class="name">
+                        <th>宛先名<span>＊</span></th>
+                        <td>
+                            <div>
+                                <div>
+                                    姓 <input type="text" placeholder="例：山田" class="must">
+                                </div>
+                                <div>
+                                    名 <input type="text" placeholder="例：花" class="must">
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="postCode">
+                        <th>郵便番号(半角数字)<span>＊</span></th>
+                        <td>
+                            <p>
+                                <input type="text" placeholder="例：1440053" class="must p-postal-code"><a href="https://www.post.japanpost.jp/zipcode/" target="_blank">郵便番号を検索</a>
+                            </p>
+                            <p>※数字7ケタ ハイフン無し</p>
+                        </td>
+                    </tr>
+                    <tr class="prefectures">
+                        <th>都道府県<span>＊</span></th>
+                        <td>
+                            <input type="text" class="p-region must" readonly="readonly" placeholder="郵便番号入力すると自動的に入力する">
+                        </td>
+                    </tr>
+                    <tr class="municipality"> 
+                        <th>市区町村<span>＊</span></th>
+                        <td>
+                            <input type="text" class="p-locality p-street-address p-extended-address must" readonly="readonly" placeholder="郵便番号入力すると自動的に入力する">
+                        </td>
+                    </tr>
+                    <tr class="adress">
+                        <th>番地<span>＊</span></th>
+                        <td>
+                            <p>
+                                <input type="text" placeholder="例：5-19-14" class="must"> ※全角入力
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="building">
+                        <th>ビル・マンション名</th>
+                        <td>
+                            <p>
+                                <input type="text" placeholder="例：六本木◯◯ビル 101号室"> ※全角入力
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="telephone">
+                        <th>電話番号(半角数字)<span>＊</span></th>
+                        <td>
+                            <p>
+                                <input type="tel" placeholder="例：07012345678" class="must" id="tel"> ※ハイフン無し
+                            </p>
+                            <p>※配送の際、確認のためご連絡を差し上げる場合があります。</p>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="rightBox">
+            <table>
+                <tr>
+                    <td class="txt4">
+                        <div>
+                            通常商品
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="margin-top">
+                            商品代金&nbsp;&nbsp;小計
+                        </div>
+                    </td>
+                    <td>
+                        <div class="margin-top cartTotal">
+                            0円 (税込)
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="margin-bottom">
+                            ご利用ポイント
+                        </div>
+                    </td>
+                    <td>
+                        <div class="margin-bottom">
+                            0pt
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="total">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;合計
+                        </div>
+                    </td>
+                    <td>
+                        <div class="total txt4">
+                            <span class="cartTotal">0円 (税込)</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <p></p>
+            <div class="cart_btn">
+                お届け先を設定する
+            </div>
+            <div class="back_btn">
+                <a href="../index.html">前のページへ戻る</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

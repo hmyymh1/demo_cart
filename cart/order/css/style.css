@@ -1,0 +1,339 @@
+header,main {
+    min-width: 1300px;
+}
+
+/* header start*/
+
+header {
+    width: 100vw;
+    height: 90px;
+    padding: 0 17vw;
+    border-bottom: 2.5px solid #4141412c;
+}
+
+header ol {
+    display: flex;
+    padding: 15px 0;
+}
+
+header ol li {
+    font-size:1.2rem;
+    font-family: 'Noto Sans JP';
+}
+
+header ol li span {
+    cursor: pointer;
+}
+
+header ol li span:hover {
+    text-decoration: underline;
+}
+
+header ol li:last-child {
+    color: #888888;
+}
+
+header h1 {
+    font-size:2.4rem;
+    font-weight:bold;
+    font-family: 'Noto Sans JP';
+}
+
+/* header end */
+/* main start*/
+
+main {
+    width: 100vw;
+    padding: 0 17vw;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.step ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    width: 780px;
+    margin:0 auto;
+}
+
+.step li {
+    width: 260px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size:1.4rem;
+    font-family: 'Noto Sans JP';
+    position: relative;
+}
+
+.step li:first-child::before {
+    content:"";
+    display:block;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 15px solid #ccc;
+    position:absolute;
+    right: -14px;
+}
+
+.step li:nth-child(2)::before {
+    content:"";
+    display:block;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 15px solid #ccc;
+    position:absolute;
+    right: -14px;
+}
+
+.step li:nth-child(2)::after {
+    content:"";
+    display:block;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 15px solid white;
+    position:absolute;
+    right: -13px;
+    top: 0;
+}
+
+.active {
+    background-color: #cccccc;
+}
+
+/* leftbox */
+
+.leftBox {
+    width:65%;
+    min-width: 800px;
+    margin-right: 5%;
+}
+
+.leftBox>p {
+    color:red;
+    font-size:1.2rem;
+    font-family: 'Noto Sans JP';
+}
+
+.leftBox h2 {
+    margin: 20px 0 25px;
+    padding-bottom:15px;
+    border-bottom:1px solid #4141412c;
+    font-size:2rem;
+    font-weight: bold;
+    font-family: 'Noto Sans JP';
+}
+
+.leftBox table {
+    font-size:1.2rem;
+    font-family: 'Noto Sans JP';
+}
+
+.leftBox tr {
+    height: 40px;
+    line-height: 30px;
+}
+
+.leftBox th {
+    text-align: left;
+    width: 150px;
+}
+
+.leftBox th span {
+    color: red;
+}
+
+.leftBox input {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 30px;
+    line-height: 30px;
+    width: 280px;
+    margin-right: 10px;
+    padding: 0 10px;
+}
+
+.leftBox input:focus {
+    border: 2px solid black;
+}
+
+.must {
+    background-color:pink;
+}
+
+.prefectures .must,.municipality .must {
+    background-color: white;
+}
+
+.leftBox .p-region,.leftBox .p-locality {
+    border: none;
+}
+
+.leftBox .p-region:focus,.leftBox .p-locality:focus {
+    border: none;
+}
+
+.name td>div {
+    display:flex;
+}
+
+.name td>div div {
+    margin-right: 30px;
+}
+
+.leftBox .name input {
+    width: 80px;
+    margin-left: 10px;
+}
+
+.leftBox .postCode input {
+    width: 110px;
+}
+
+.leftBox .postCode a {
+    text-decoration: underline;
+}
+
+.leftBox .telephone input {
+    width: 150px;
+}
+/* rightbox */
+
+.rightBox {
+    margin-top:40px;
+    width: 30%;
+    min-width: 350px;
+    padding:25px 30px;
+    background:#4141412c;
+    max-height: 300px;
+}
+
+.rightBox table {
+    width:100%;
+    border-collapse: collapse; 
+    font-size:1.2rem;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+}
+
+.rightBox table tr:first-child {
+    border-bottom: 1px solid #000;
+}
+
+.rightBox table tr td:first-child {
+    float: left;
+}
+
+.rightBox table tr td:last-child {
+    float: right;
+}
+
+.txt4 {
+    font-size:1.6rem;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+    font-weight: bold;
+}
+
+.txt4 div {
+    padding-bottom: 10px;
+}
+
+.margin-top {
+    margin-top: 10px;
+}
+
+.margin-bottom {
+    margin-bottom: 10px;
+}
+
+.rightBox table tr:last-child {
+    border-top: 1px solid #4141412c;
+}
+
+.total {
+    margin-top:10px;
+}
+
+.rightBox p {
+    color:red;
+    margin: 10px 0 15px;
+    font-size:1.2rem;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+}
+
+.cart_btn {
+    min-width: 290px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.cart_btn:hover {
+    text-decoration: underline;
+}
+
+.cart_btn::before {
+    position: absolute;
+    content: "";
+    display: block;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    transform:translateY(-50%) rotateZ(45deg);
+    top: 50%;
+    right: 15px;
+    width: 8px;
+    height: 8px; 
+}
+
+.back_btn {
+    min-width: 290px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Noto Sans JP',"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+}
+
+.back_btn:hover {
+    text-decoration: underline;
+}
+
+.back_btn::before {
+    position: absolute;
+    content: "";
+    display: block;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    transform:translateY(-50%) rotateZ(225deg);
+    top: 50%;
+    left: 15px;
+    width: 8px;
+    height: 8px; 
+}
